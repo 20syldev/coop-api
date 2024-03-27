@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, send_from_directory, request, send_file
 from PIL import Image, ImageDraw, ImageFont
 import random
 import io
@@ -7,6 +7,10 @@ app = Flask(__name__, template_folder="src", static_folder="src")
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory(app.static_folder, filename)
 
 @app.route('/captcha', methods=['GET'])
 def generate_captcha():
