@@ -1,9 +1,12 @@
-from flask import Flask, request, send_file
+from flask import Flask, send_from_directory, request, send_file
 from PIL import Image, ImageDraw, ImageFont
 import random
 import io
-
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return send_from_directory('static', 'index.html')
 
 @app.route('/captcha')
 def generate_captcha():
