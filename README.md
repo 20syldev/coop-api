@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://api.coopbot.xyz"><img src="https://github.com/20syldev/captcha-api/blob/main/src/api.png" alt="Logo" width="25%" height="auto"></a>
+  <a href="https://api.coopbot.xyz"><img src="https://github.com/20syldev/api/blob/main/src/api.png" alt="Logo" width="25%" height="auto"></a>
 
 # Captcha - API
   [![Badge1](https://img.shields.io/badge/Version%20:-v1.0.0-ee6464?labelColor=23272A)](https://api.coopbot.xyz)
