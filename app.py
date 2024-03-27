@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, send_file
 from PIL import Image, ImageDraw, ImageFont
 import random
 import io
-app = Flask(__name__, template_folder="src")
+app = Flask(__name__, template_folder="src", static_folder="src")
 
 @app.route('/')
 def index():
