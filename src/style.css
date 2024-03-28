@@ -10,6 +10,7 @@ body {
 }
 
 #title {
+    user-select: none;
     font-family: 'Raleway-Regular';
     padding: 10px;
 }
