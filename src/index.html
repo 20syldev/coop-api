@@ -3,8 +3,9 @@
 <head>
     <title>Coop - Public API</title>
     <meta content="text/html" charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='api.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mobile.css') }}" media="handheld, only screen and (max-device-width: 1080px)"/>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='api.png') }}"/>
   </head>
   <body>
     <span id="title">Endpoints</span>
