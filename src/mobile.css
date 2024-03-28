@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('./Raleway-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #2a2b38;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+#title {
+    user-select: none;
+    font-family: 'Raleway-Regular';
+    font-size: 2vh;
+    padding: 10px;
+}
+
+pre {
+    margin-left: -25px;
+    font-size: 1.8vw;
+}
