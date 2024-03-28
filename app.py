@@ -1,7 +1,8 @@
-from flask import Flask, render_template, send_from_directory, request, send_file
+from flask import Flask, render_template, send_from_directory, request, send_file, abort
 from PIL import Image, ImageDraw, ImageFont
 import random
 import io
+
 app = Flask(__name__, template_folder="src", static_folder="src")
 
 @app.route('/')
@@ -43,6 +44,10 @@ def generate_captcha():
     img_buffer.seek(0)
 
     return send_file(img_buffer, mimetype='image/png')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
