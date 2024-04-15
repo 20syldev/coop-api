@@ -18,7 +18,7 @@ def generate_captcha():
     captcha_text = request.args.get('txt', '')
 
     font_size = 60
-    font = ImageFont.truetype("src/captcha.otf", font_size)
+    font = ImageFont.truetype("src/font.otf", font_size)
 
     total_text_width = len(captcha_text) * font_size
 
