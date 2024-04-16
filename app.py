@@ -17,6 +17,9 @@ def serve_static(filename):
 def generate_captcha():
     captcha_text = request.args.get('txt', '')
 
+    if not captcha_text.isalnum():
+        abort(404)
+
     font_size = 60
     font = ImageFont.truetype("src/font.otf", font_size)
 
