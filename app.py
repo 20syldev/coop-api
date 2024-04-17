@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory, request, send_file, abort
+from flask import Flask, render_template, send_from_directory, send_file, request, jsonify, abort
 from PIL import Image, ImageDraw, ImageFont
 import random
 import io
@@ -17,22 +17,21 @@ def serve_static(filename):
 def generate_captcha():
     captcha_text = request.args.get('txt', '')
 
-    if not captcha_text.isalnum():
+    if not captcha_text:
+        return jsonify({'error': 'Veuillez fournir un argument valide (?txt={Texte})'})
+    elif not captcha_text.isalnum():
         abort(404)
 
-    font_size = 60
-    font = ImageFont.truetype("src/font.otf", font_size)
-
-    total_text_width = len(captcha_text) * font_size
-
+    size = 60
+    font = ImageFont.truetype("src/font.otf", size)
+    total_text_width = len(captcha_text) * size
     image = Image.new('RGB', (total_text_width, 100), color=(255, 255, 255))
+    
     d = ImageDraw.Draw(image)
-    
     x = (image.width + 20 - total_text_width) / 2
+    y = (image.height - size) / 2
     
-    y = (image.height - font_size) / 2
-    
-    char_width_estimate = font_size * 1
+    char_width_estimate = size * 1
     
     for char in captcha_text:
         text_color = (random.randint(0, 192), random.randint(0, 192), random.randint(0, 192))
@@ -50,7 +49,7 @@ def generate_captcha():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html'), 404
+    return jsonify({'error': 'Veuillez fournir un endpoint valide'})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
