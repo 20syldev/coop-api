@@ -2,8 +2,8 @@
   <a href="https://api.coopbot.xyz"><img src="https://github.com/20syldev/coop-api/blob/main/src/api.png" alt="Logo" width="25%" height="auto"></a>
 
 # Coop - API Publique
-  [![Badge1](https://img.shields.io/badge/Version%20:-v1.3.1-ee6464?labelColor=23272A)](https://api.coopbot.xyz)
-  [![Badge2](https://img.shields.io/badge/Statut%20:-En%20ligne-42b85f?labelColor=23272A)](https://api.coopbot.xyz)
+  [![Version](https://img.shields.io/badge/Version%20:-v1.3.1-ee6464?labelColor=23272A)](https://api.coopbot.xyz)
+  [![Statut](https://img.shields.io/badge/Statut%20:-En%20ligne-42b85f?labelColor=23272A)](https://api.coopbot.xyz)
 </div>
 
 ---
