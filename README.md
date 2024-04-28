@@ -18,4 +18,4 @@ Mais vous pouvez aussi l'utiliser pour **VOS** bots, car tous les **endpoints** 
 - Utilisation simple
 - Rapidité et design facile
 - Endpoint de captcha
-  - Utilisez une commande pour envoyer une requête avec du texte dans l'url (ex : `api.coopbot.xyz/captcha?txt=An8dLQ`), puis attendez une réponse, correspondante au texte que vous avez rentré dans l'url !
+  - Utilisez une commande pour envoyer une requête avec du texte dans l'url (ex : **`api.coopbot.xyz/captcha?txt=An8dLQ`**), puis attendez une réponse, correspondante au texte que vous avez rentré dans l'url !
