@@ -1,21 +1,17 @@
 <div align="center">
-  <a href="https://api.coopbot.xyz"><img src="https://github.com/20syldev/coop-api/blob/main/src/api.png" alt="Logo" width="25%" height="auto"></a>
+  <a href="https://api.sylvain.pro"><img src="https://github.com/20syldev/coop-api/blob/main/src/api.png" alt="Logo" width="25%" height="auto"></a>
 
 # Coop - API Publique
   [![Version](https://img.shields.io/badge/Version%20:-v1.3.1-ee6464?labelColor=23272A)](https://github.com/20syldev/coop-api/releases/latest)
-  [![Statut](https://img.shields.io/badge/Statut%20:-En%20ligne-42b85f?labelColor=23272A)](https://api.coopbot.xyz)
+  [![Statut](https://img.shields.io/badge/Statut%20:-Archivé-e39f1b?labelColor=23272A)](api.sylvain.pro)
 </div>
 
 ---
 
 ## À propos de l'API
-L'API publique **Coop** est utilisée avec le bot Discord [Coop](https://coopbot.xyz). 
-Mais vous pouvez aussi l'utiliser pour **VOS** bots, car tous les **endpoints** sont disponibles au public !
-> *Un seul endpoint est actuellement disponible, mais de nouvelles fonctionnalités sont à venir !*
+L'API publique **Coop** a été archivée, **1** endpoint à été déplacé sur l'API du créateur de [Coop](https://coopbot.xyz) : [api.sylvain.pro](https://api.sylvain.pro)  
+[En savoir plus](https://github.com/20syldev/api#readme)
 
-## Les caractéristiques
-- Hébergé **24h/7j**
-- Utilisation simple
-- Rapidité et design facile
-- Endpoint de captcha
-  - Utilisez une commande pour envoyer une requête avec du texte dans l'url (ex : **`api.coopbot.xyz/captcha?txt=An8dLQ`**), puis attendez une réponse, correspondante au texte que vous avez rentré dans l'url !
+> [!WARNING]
+> **[FR]** Si vous utilisiez l'API dans vos codes, pensez à modifier les liens "`api.coopbot.xyz`" en "`api.sylvain.pro/fr/captcha`".  
+> **[EN]** If you use the API in your codes, remember to change the "`api.coopbot.xyz`" links to "`api.sylvain.pro/en/captcha`". 
